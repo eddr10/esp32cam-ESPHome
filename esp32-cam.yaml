@@ -1,0 +1,61 @@
+esphome:
+  name: esp32-cam
+  friendly_name: ESP32-CAM
+
+esp32:
+  board: esp32cam
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "ZCgoC/+TaCZDHkpQkgYEAzXE5PCoFZxNmoFdSu8dMDg="
+
+ota:
+  platform: esphome
+  password: "7bd80f4df115f9b826f4954f30e5d1f0"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  
+  ap:
+    ssid: "Esp32-Cam Fallback Hotspot"
+    password: "m1GO49nwWXM8"
+
+esp32_camera:
+  external_clock:
+    pin: GPIO0
+    frequency: 20MHz
+  i2c_pins:
+    sda: GPIO26
+    scl: GPIO27
+  data_pins: [GPIO5, GPIO18, GPIO19, GPIO21, GPIO36, GPIO39, GPIO34, GPIO35]
+  vsync_pin: GPIO25
+  href_pin: GPIO23
+  pixel_clock_pin: GPIO22
+  power_down_pin: GPIO32
+  
+  name: esp_cam02
+  
+  # image settings
+  resolution: 1024X768
+  contrast: 2
+  saturation: -2
+  max_framerate: 15 fps
+
+
+output:
+  - platform: ledc
+    pin: GPIO4
+    channel: 2 # channel 1 is used for esp32_camera
+    id: led
+light:
+  - platform: monochromatic
+    output: led
+    name: espcam_02 light
