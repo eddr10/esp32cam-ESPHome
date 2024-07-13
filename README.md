@@ -22,5 +22,5 @@ Also added a Led component which ESP32CAM has included on board to create automa
 
 Device is flashed using ESPHome-flasher and ESPHome
 
-https://github.com/esphome/esphome-flasher 
+https://github.com/esphome/esphome-flasher
 https://esphome.io/guides/getting_started_hassio.html 
