@@ -13,11 +13,11 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "ZCgoC/+TaCZDHkpQkgYEAzXE5PCoFZxNmoFdSu8dMDg="
+    key: 
 
 ota:
   platform: esphome
-  password: "7bd80f4df115f9b826f4954f30e5d1f0"
+  password: 
 
 wifi:
   ssid: !secret wifi_ssid
@@ -26,7 +26,7 @@ wifi:
   
   ap:
     ssid: "Esp32-Cam Fallback Hotspot"
-    password: "m1GO49nwWXM8"
+    password: 
 
 esp32_camera:
   external_clock:
