@@ -1,7 +1,6 @@
 YAML file for ESP32-CAM (Ai Thinker Model) for ESPHome and Home Assistant Integration. 
 
-File is structured as next
-
+## File is structured as next
 
 1. General configuration for ESPHome and ESP32 Board
 2. Network Configuration for Wifi, OTA and Home Assistant API
@@ -17,10 +16,9 @@ Max frame rates: 15 fps
 
 Also added a Led component which ESP32CAM has included on board to create automation on Home Assistant. 
 
+## Firmware Flash
+Device is flashed using ESPHome-flasher and ESPHome settings (.bin file required) 
 
+[https://github.com/esphome/esphome-flasher]
 
-
-Device is flashed using ESPHome-flasher and ESPHome
-
-https://github.com/esphome/esphome-flasher /n
-https://esphome.io/guides/getting_started_hassio.html 
+[https://esphome.io/guides/getting_started_hassio.html]
