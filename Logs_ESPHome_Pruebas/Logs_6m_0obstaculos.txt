@@ -1,0 +1,92 @@
+INFO ESPHome 2024.6.6
+INFO Reading configuration /config/esphome/esp32-cam.yaml...
+WARNING GPIO0 is a strapping PIN and should only be used for I/O with care.
+Attaching external pullup/down resistors to strapping pins can cause unexpected failures.
+See https://esphome.io/guides/faq.html#why-am-i-getting-a-warning-about-strapping-pins
+WARNING GPIO5 is a strapping PIN and should only be used for I/O with care.
+Attaching external pullup/down resistors to strapping pins can cause unexpected failures.
+See https://esphome.io/guides/faq.html#why-am-i-getting-a-warning-about-strapping-pins
+INFO Starting log output from 192.168.1.6 using esphome API
+INFO Successfully connected to esp32-cam @ 192.168.1.6 in 0.110s
+INFO Successful handshake with esp32-cam @ 192.168.1.6 in 0.066s
+[15:36:08][I][app:100]: ESPHome version 2024.6.6 compiled on Aug 13 2024, 16:18:01
+[15:36:08][C][wifi:599]: WiFi:
+[15:36:08][C][wifi:427]:   Local MAC: 08:D1:F9:3A:35:D8
+[15:36:08][C][wifi:432]:   SSID: 'ECRP18'[redacted]
+[15:36:08][C][wifi:435]:   IP Address: 192.168.1.6
+[15:36:08][C][wifi:439]:   BSSID: 6C:63:9C:34:FB:62[redacted]
+[15:36:08][C][wifi:440]:   Hostname: 'esp32-cam'
+[15:36:08][C][wifi:442]:   Signal strength: -62 dB ▂▄▆█
+[15:36:08][C][wifi:446]:   Channel: 3
+[15:36:08][C][wifi:447]:   Subnet: 255.255.255.0
+[15:36:08][C][wifi:448]:   Gateway: 192.168.1.254
+[15:36:08][C][wifi:449]:   DNS1: 200.24.51.144
+[15:36:08][C][wifi:450]:   DNS2: 190.240.115.151
+[15:36:08][C][logger:185]: Logger:
+[15:36:08][C][logger:186]:   Level: DEBUG
+[15:36:08][C][logger:188]:   Log Baud Rate: 115200
+[15:36:08][C][logger:189]:   Hardware UART: UART0
+[15:36:08][C][ledc.output:176]: LEDC Output:
+[15:36:08][C][ledc.output:177]:   Pin GPIO4
+[15:36:08][C][ledc.output:178]:   LEDC Channel: 2
+[15:36:08][C][ledc.output:179]:   PWM Frequency: 1000.0 Hz
+[15:36:08][C][ledc.output:180]:   Phase angle: 0.0°
+[15:36:08][C][ledc.output:181]:   Bit depth: 16
+[15:36:08][C][light:103]: Light 'espcam_02 light'
+[15:36:08][C][light:105]:   Default Transition Length: 1.0s
+[15:36:08][C][light:106]:   Gamma Correct: 2.80
+[15:36:08][C][esp32_camera:048]: ESP32 Camera:
+[15:36:08][C][esp32_camera:049]:   Name: esp_cam02
+[15:36:08][C][esp32_camera:050]:   Internal: NO
+[15:36:08][C][esp32_camera:052]:   Data Pins: D0:5 D1:18 D2:19 D3:21 D4:36 D5:39 D6:34 D7:35
+[15:36:08][C][esp32_camera:053]:   VSYNC Pin: 25
+[15:36:08][C][esp32_camera:054]:   HREF Pin: 23
+[15:36:08][C][esp32_camera:055]:   Pixel Clock Pin: 22
+[15:36:08][C][esp32_camera:056]:   External Clock: Pin:0 Frequency:20000000
+[15:36:08][C][esp32_camera:060]:   I2C Pins: SDA:26 SCL:27
+[15:36:08][C][esp32_camera:062]:   Reset Pin: -1
+[15:36:08][C][esp32_camera:089]:   Resolution: 1280x1024 (SXGA)
+[15:36:08][C][esp32_camera:129]:   JPEG Quality: 10
+[15:36:08][C][esp32_camera:131]:   Contrast: 2
+[15:36:08][C][esp32_camera:132]:   Brightness: 0
+[15:36:08][C][esp32_camera:133]:   Saturation: -2
+[15:36:08][C][esp32_camera:134]:   Vertical Flip: ON
+[15:36:09][C][esp32_camera:135]:   Horizontal Mirror: ON
+[15:36:09][C][esp32_camera:136]:   Special Effect: 0
+[15:36:09][C][esp32_camera:137]:   White Balance Mode: 0
+[15:36:09][C][esp32_camera:140]:   Auto Exposure Control: 1
+[15:36:09][C][esp32_camera:141]:   Auto Exposure Control 2: 0
+[15:36:09][C][esp32_camera:142]:   Auto Exposure Level: 0
+[15:36:09][C][esp32_camera:143]:   Auto Exposure Value: 300
+[15:36:09][C][esp32_camera:144]:   AGC: 1
+[15:36:09][C][esp32_camera:145]:   AGC Gain: 0
+[15:36:09][C][esp32_camera:146]:   Gain Ceiling: 0
+[15:36:09][C][esp32_camera:152]:   Test Pattern: NO
+[15:36:09][C][psram:020]: PSRAM:
+[15:36:09][C][psram:021]:   Available: YES
+[15:36:09][C][psram:024]:   Size: 2047 KB
+[15:36:09][C][mdns:115]: mDNS:
+[15:36:09][C][mdns:116]:   Hostname: esp32-cam
+[15:36:09][C][esphome.ota:073]: Over-The-Air updates:
+[15:36:09][C][esphome.ota:074]:   Address: esp32-cam.local:3232
+[15:36:09][C][esphome.ota:075]:   Version: 2
+[15:36:09][C][esphome.ota:078]:   Password configured
+[15:36:09][C][safe_mode:018]: Safe Mode:
+[15:36:09][C][safe_mode:020]:   Boot considered successful after 60 seconds
+[15:36:09][C][safe_mode:021]:   Invoke after 10 boot attempts
+[15:36:09][C][safe_mode:023]:   Remain in safe mode for 300 seconds
+[15:36:09][C][api:139]: API Server:
+[15:36:09][C][api:140]:   Address: esp32-cam.local:6053
+[15:36:09][C][api:142]:   Using noise encryption: YES
+[15:36:12][D][esp32_camera:196]: Got Image: len=72490
+[15:36:22][D][esp32_camera:196]: Got Image: len=73385
+[15:36:32][D][esp32_camera:196]: Got Image: len=73800
+[15:36:32][I][safe_mode:041]: Boot seems successful; resetting boot loop counter
+[15:36:33][D][esp32.preferences:114]: Saving 1 preferences to flash...
+[15:36:33][D][esp32.preferences:143]: Saving 1 preferences to flash: 0 cached, 1 written, 0 failed
+[15:36:42][D][esp32_camera:196]: Got Image: len=71781
+[15:36:52][D][esp32_camera:196]: Got Image: len=74136
+[15:37:02][D][esp32_camera:196]: Got Image: len=71166
+[15:37:12][D][esp32_camera:196]: Got Image: len=72867
+[15:37:22][D][esp32_camera:196]: Got Image: len=74945
+[15:37:32][D][esp32_camera:196]: Got Image: len=75325
